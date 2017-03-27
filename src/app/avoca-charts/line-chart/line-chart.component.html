@@ -1,0 +1,29 @@
+<div class="chart" #container>
+  <avo-x-axis *ngIf="showXAxis"
+              [svg]="svg"
+              [data]="data"
+              [containerHeight]="containerHeight"
+              [containerWidth]="containerWidth"
+              [width]="width"
+              [margin]="margin"
+              [xScale]="xScale"
+              [XAxisOpacity]="XAxisOpacity"
+              [tickPadding]="tickPadding"
+  ></avo-x-axis>
+  <avo-y-axis *ngIf="showYAxis"
+              [svg]="svg"
+              [yScale]="yScale"
+              [height]="height"
+              [margin]="margin"
+              [YAxisOpacity]="YAxisOpacity"
+              [tickPadding]="tickPadding"
+  ></avo-y-axis>
+  <avo-line *ngIf="line"
+            [data]="data"
+            [margin]="margin"
+            [svg]="svg"
+            [xScale]="xScale"
+            [yScale]="yScale"
+            [colorScheme]="colorScheme"
+  ></avo-line>
+</div>
